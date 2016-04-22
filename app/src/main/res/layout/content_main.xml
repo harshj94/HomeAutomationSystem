@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="beproject.homeautomationsystem.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/tube"
+                android:background="#262626"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/tube_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/tubeoff" />
+
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#4C4C4C"
+                    android:id="@+id/tube_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tube_icon"
+                    android:text="Light"
+                    android:textSize="30sp" />
+
+                <RatingBar
+                    android:paddingTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:progressDrawable="@drawable/ratingbar_orange"
+                    android:stepSize="1.0"
+                    android:layout_below="@+id/tube_text"
+                    android:layout_alignLeft="@+id/tube_icon"
+                    android:layout_alignStart="@+id/tube_icon"
+                    android:rating="0.0"
+                    android:numStars="7"
+                    android:layout_alignParentBottom="true" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/cfl"
+                android:background="#262626"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/cfl_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/lightoff" />
+
+                <TextView
+                    android:textColor="#4C4C4C"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/cfl_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/cfl_icon"
+                    android:text="CFL"
+                    android:textSize="30sp" />
+
+                <RatingBar
+                    android:paddingTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar1"
+                    android:progressDrawable="@drawable/ratingbar_orange"
+                    android:stepSize="1.0"
+
+                    android:layout_below="@+id/cfl_text"
+                    android:layout_alignLeft="@+id/cfl_icon"
+                    android:layout_alignStart="@+id/cfl_icon"
+                    android:rating="0.0"
+                    android:numStars="7"
+                    android:layout_alignParentBottom="true" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fan"
+                android:background="#262626"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/fan_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/fanoff" />
+
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/fan_text"
+                    android:textColor="#4C4C4C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/fan_icon"
+                    android:text="Fan"
+                    android:textSize="30sp" />
+
+                <RatingBar
+                    android:paddingTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar2"
+                    android:progressDrawable="@drawable/ratingbar_orange"
+                    android:stepSize="1.0"
+                    android:layout_below="@+id/fan_text"
+                    android:layout_alignLeft="@+id/fan_icon"
+                    android:layout_alignStart="@+id/fan_icon"
+                    android:rating="0.0"
+                    android:numStars="7"
+                    android:layout_alignParentBottom="true" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
